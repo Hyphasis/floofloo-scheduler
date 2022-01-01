@@ -16,9 +16,9 @@ jobs:
         run: heroku container:login
       
       - name: Push to Heroku Registry
-        run: heroku container:push worker --app ${{ secrets.HEROKU_APP_NAME }}
+        run: heroku container:push web --app ${{ secrets.HEROKU_APP_NAME }}
       
       - name: Release to Heroku
         run: |
-          heroku container:release worker --app ${{ secrets.HEROKU_APP_NAME }}
+          heroku container:release web --app ${{ secrets.HEROKU_APP_NAME }}
           

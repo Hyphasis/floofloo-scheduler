@@ -1,1 +1,1 @@
-worker: sh /usr/local/bin/scheduler.sh
+web: sh /usr/local/bin/scheduler.sh

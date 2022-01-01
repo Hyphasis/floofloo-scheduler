@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$RACK_ENV" == "production" ]
+if [ "$ENV" == "production" ]
 then
   host='https://floofloo-api.herokuapp.com'
 else
