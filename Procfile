@@ -1,0 +1,1 @@
+web: sh /usr/local/bin/scheduler.sh
